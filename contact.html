@@ -1,28 +1,150 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
+    <meta charset="UTF-8" />
+    <title>Contact – Penda Jayvan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Contactez Penda Jayvan, étudiante en BTS SIO SISR. Coordonnées et documents professionnels." />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<h2>Contact</h2>
-<p>Vous pouvez nous joindre ou voir :</p>
-<h2>Coordonnées</h2>
-<ul>
-    <li>Adresse : 12 rue des Gourmets, 7700 Melun</li>
-    <li>Téléphone : 01 23 45 67 89</li>
-    <li>Email : contact@labonnefourchette.fr</li>
-</ul>
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <div class="profile">
+                    <div class="avatar" aria-hidden="true">PJ</div>
+                    <h1 class="name">Penda Jayvan</h1>
+                    <p class="role">Étudiante en BTS SIO – SISR</p>
+                    <p class="school">Campus Saint-Aspais</p>
+                </div>
 
-<h2>Horaires</h2>
-<ul>
-    <li>Lundi - Vendredi : 12h00 - 14h30, 19h00 - 22h30</li>
-    <li>Samedi : 19h30 - 23h00</li>
-    <li>Dimanche : Fermé</li>
+                <nav class="nav">
+                    <a href="index.html#accueil">Accueil</a>
+                    <a href="index.html#parcours">Parcours</a>
+                    <a href="index.html#projets">Projets</a>
+                    <a href="index.html#competences">Compétences</a>
+                    <a href="index.html#technique">Procédures techniques</a>
+                    <a href="contact.html" aria-current="page" class="active">Contact & documents</a>
+                </nav>
 
-</ul>
+                <div class="sidebar-footer">
+                    <p class="sidebar-title">En quelques mots</p>
+                    <p class="sidebar-text">
+                        Passionnée par les systèmes, les réseaux et la sécurité informatique.
+                        Mon objectif : évoluer dans le domaine de l’infrastructure
+                        et de la cybersécurité après mon BTS SIO.
+                    </p>
+                </div>
+            </div>
+        </aside>
 
-    <p><a href="Restaurant.html">Nous contacter</a></p>
-<p> 2025 - La Bonne Fourchette</p>
+        <!-- Main content -->
+        <main class="content">
+            <section id="contact" class="section">
+                <div class="section-header">
+                    <p class="section-kicker">Contact</p>
+                    <h2 class="section-title">Me contacter & documents</h2>
+                </div>
+
+                <div class="grid grid-2">
+                    <!-- Infos contact -->
+                    <div class="card">
+                        <h3 class="section-subtitle">Coordonnées</h3>
+                        <dl class="info-list">
+                            <div class="info-item">
+                                <dt>Nom</dt>
+                                <dd>Penda Jayvan</dd>
+                            </div>
+                            <div class="info-item">
+                                <dt>Email</dt>
+                                <dd>
+                                    <a href="mailto:pendajayvan9@gmail.com">pendajayvan9@gmail.com</a>
+                                </dd>
+                            </div>
+                            <div class="info-item">
+                                <dt>Téléphone</dt>
+                                <dd><a href="tel:0745143510">07 45 14 35 10</a></dd>
+                            </div>
+                            <div class="info-item">
+                                <dt>Localisation</dt>
+                                <dd>La Rochette</dd>
+                            </div>
+                        </dl>
+                        <p class="card-text">
+                            Pour toute question, proposition de stage ou échange
+                            professionnel, n’hésitez pas à me contacter par
+                            email ou par téléphone.
+                        </p>
+                    </div>
+
+                    <!-- Formulaire -->
+                    <div class="card">
+                        <h3 class="section-subtitle">Formulaire de contact</h3>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="nom">Nom</label>
+                                <input type="text" id="nom" name="nom" placeholder="Votre nom" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse e-mail</label>
+                                <input type="email" id="email" name="email" placeholder="votre@email.fr" />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Votre message..."></textarea>
+                            </div>
+                            <!-- Pas de backend : le bouton est purement visuel -->
+                            <button type="button" class="btn-primary">Envoyer
+                                (démonstration)</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Documents -->
+                <div class="section-sub">
+                    <h3 class="section-subtitle">Documents professionnels</h3>
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <h4>CV</h4>
+                            <p class="card-text">
+                                CV au format PDF – taille initiale&nbsp;: 191,6&nbsp;Ko.
+                            </p>
+                            <!-- À remplacer par le vrai lien vers le CV -->
+                            <a class="btn-outline" href="cv-penda-jayvan.pdf" target="_blank" rel="noreferrer">
+                                Télécharger mon CV
+                            </a>
+                        </div>
+                        <div class="card">
+                            <h4>Lettre de motivation</h4>
+                            <p class="card-text">
+                                Lettre de motivation au format PDF – taille
+                                initiale&nbsp;: 170,2&nbsp;Ko.
+                            </p>
+                            <!-- À remplacer par le vrai lien vers la lettre de motivation -->
+                            <a class="btn-outline" href="lettre-motivation-penda-jayvan.pdf" target="_blank"
+                                rel="noreferrer">
+                                Télécharger ma lettre de motivation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>&copy; <span id="year"></span> – Portfolio de Penda Jayvan | BTS SIO – SISR</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Année dynamique dans le footer
+        document.getElementById("year").textContent = new Date().getFullYear(); 
+    </script>
 </body>
-</html> 
+
+</html>
